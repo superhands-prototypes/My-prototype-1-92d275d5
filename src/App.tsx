@@ -1,7 +1,17 @@
 export default function App() {
   return (
     <div className="app">
-      
+      <div className="hello-container">
+        {['H', 'E', 'L', 'L', 'O'].map((letter, index) => (
+          <span
+            key={index}
+            className="hello-letter"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {letter}
+          </span>
+        ))}
+      </div>
     </div>
   )
 }
