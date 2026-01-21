@@ -1,16 +1,13 @@
 export default function App() {
   return (
     <div className="app">
-      <div className="hello-container">
-        {['H', 'E', 'Y', ' ', 'M', 'A', 'T', 'E'].map((letter, index) => (
-          <span
-            key={index}
-            className="hello-letter"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            {letter}
-          </span>
-        ))}
+      <div className="clouds-container">
+        <div className="cloud cloud-1"></div>
+        <div className="cloud cloud-2"></div>
+        <div className="cloud cloud-3"></div>
+        <div className="cloud cloud-4"></div>
+        <div className="cloud cloud-5"></div>
+        <div className="cloud cloud-6"></div>
       </div>
     </div>
   )
